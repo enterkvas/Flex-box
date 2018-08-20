@@ -1,0 +1,46 @@
+body {
+	background-color:#DADADA;
+	padding: 50px;
+}
+
+.block-1 {
+	height: 600px;
+	background-color: #FFF;
+	border: 6px solid #2196F3;
+	/*padding: 30px;*/
+	display: flex;
+		/*flex-direction: row; правило работает по умолчанию при display: flex; */
+
+			/* горизонтальное выравнивание элементов ряда: */
+			/*justify-content: flex-start; правило работает по умолчанию при flex-direction: row;(и flex-direction: column;) и выстраивает элементы по ГЛАВНОЙ(горизонтальной) оси по левой стороне flex-box`a */
+			/*justify-content: flex-end;
+			justify-content: center;*/
+			justify-content: space-around;
+			/*justify-content: space-between;*/
+			
+			/* вертикальное выравнивание элементов ряда: */
+			/*align-items: flex-start; правило работает по умолчанию при flex-direction: row;(и flex-direction: column;) и выстраивает элементы по ПОПЕРЕЧНОЙ(вертикальной) оси по верху flex-box`a */
+			/*align-items: flex-end; выравнивает по низу flex-box`a */
+			align-items: baseline;/* будут выровнены по базовой линии текста внутри элементов */ 
+			/*align-items: center;*/
+			/*align-items: stretch; растянуты по вертикали на всю высоту flex-box`a */				
+	
+		flex-direction: column;
+			/* Свойства по умолчанию */
+			justify-content: flex-start;
+			align-items: flex-start;
+			/* все свойства justify-content и align-items работают АНАЛОГИЧНО тому, как они работают в свойстве flex-direction: row; */
+
+		/*flex-direction: row-reverse; и flex-direction: column-reverse; - выстраивают элементы в обратном порядке*/
+
+}
+
+.block-1__item {
+	/*height: 150px;*/
+	background-color: #4CAF50;
+	border: 4px solid #B2FF59;
+	text-align: center;
+	padding: 30px;
+	font-size: 28px;
+	color: #fff;
+} 
